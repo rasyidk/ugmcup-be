@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_list_results",
+  "info": {
+    "displayName": "Result"
+  },
+  "options": {},
+  "attributes": {
+    "Test1": {
+      "type": "string"
+    },
+    "Test2": {
+      "type": "string"
+    }
+  }
+}

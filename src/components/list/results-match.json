@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_list_results_matches",
+  "info": {
+    "displayName": "ResultsMatch"
+  },
+  "options": {},
+  "attributes": {
+    "skor_A": {
+      "type": "integer"
+    },
+    "skor_B": {
+      "type": "integer"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bagans",
+  "info": {
+    "singularName": "bagan",
+    "pluralName": "bagans",
+    "displayName": "Bagan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "kategori": {
+      "type": "enumeration",
+      "enum": [
+        "Universitas",
+        "SMA/SMK"
+      ]
+    },
+    "link_bagan": {
+      "type": "string"
+    },
+    "nomor_pertandingan": {
+      "type": "enumeration",
+      "enum": [
+        "TUNGGAL PUTRA (MS)",
+        "TUNGGAL PUTRI (WS)",
+        "GANDA PUTRA (MD)",
+        "GANDA PUTRI (MD)",
+        "GANDA CAMPURAN (XD)",
+        "BEREGU (TM) TUNGGAL PUTRA",
+        "BEREGU (TM) TUNGGAL PUTRI",
+        "BEREGU (TM) GANDA PUTRA",
+        "BEREGU (TM) GANDA PUTRI",
+        "BEREGU (TM) GANDA CAMPURAN"
+      ]
+    }
+  }
+}

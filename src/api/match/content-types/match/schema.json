@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches",
+  "info": {
+    "singularName": "match",
+    "pluralName": "matches",
+    "displayName": "match",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomor_pertandingan": {
+      "type": "enumeration",
+      "enum": [
+        "TUNGGAL PUTRA (MS)",
+        "TUNGGAL PUTRI (WS)",
+        "GANDA PUTRA (MD)",
+        "GANDA PUTRI (MD)",
+        "GANDA CAMPURAN (XD)",
+        "BEREGU (TM) TUNGGAL PUTRA",
+        "BEREGU (TM) TUNGGAL PUTRI",
+        "BEREGU (TM) GANDA PUTRA",
+        "BEREGU (TM) GANDA PUTRI",
+        "BEREGU (TM) GANDA CAMPURAN"
+      ]
+    },
+    "kategori": {
+      "type": "enumeration",
+      "enum": [
+        "Universitas",
+        "SMA/SMK",
+        "Beregu"
+      ]
+    },
+    "player_A2": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "skor_akhir_A": {
+      "type": "integer"
+    },
+    "skor_akhir_B": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Upcoming",
+        "Live",
+        "Finished"
+      ]
+    },
+    "ResultsMatch": {
+      "displayName": "ResultsMatch",
+      "type": "component",
+      "repeatable": true,
+      "component": "list.results-match"
+    },
+    "player_B1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "player_B2": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "player_A1": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::player.player"
+    },
+    "datetime": {
+      "type": "datetime"
+    },
+    "stage": {
+      "type": "enumeration",
+      "enum": [
+        "Penyisihan",
+        "Babak 32 Besar",
+        "Babak 16 Besar",
+        "Babak 8 Besar",
+        "FInal",
+        "Semifinal"
+      ]
+    },
+    "court": {
+      "type": "enumeration",
+      "enum": [
+        "Court 1",
+        "Court 2",
+        "Court 3"
+      ]
+    }
+  }
+}
